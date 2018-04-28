@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<!--
+Name       : WellFormed 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130731
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+<script id="_waua73">var _wau = _wau || [];
+_wau.push(["tab", "4cmc01bb9gwp", "a73", "left-middle"]);
+(function() {var s=document.createElement("script"); s.async=true;
+s.src="http://widgets.amung.us/tab.js";
+document.getElementsByTagName("head")[0].appendChild(s);
+})();</script>
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+
+
+</head>
+<body>
+<div id="logo" class="container">
+	<!--
+
+	<a href="#" class="image image-full"><img src="images/title.jpg" alt="" width="300" height="200"/></a>
+	-->
+	
+	<table style="width:700px">
+<tr>
+  <td >	<img src="images/logo.jpg" alt="" width="100" height="100"/></td>
+  <td>	<h1><a href="#">VSA <span>Virginia Tech</span></a></h1>
+  <p>Vietnamese Student Association at Virginia Tech</p></td> 
+
+  
+</tr>
+
+</table>
+
+</div>
+
+<div id="menu" class="container">
+	<ul>
+				<li class="active"><a href="welcome.html" accesskey="1" title="">Home</a></li>
+				<li><a href="aboutUs.html" accesskey="2" title="">About Us</a></li>
+				<li><a href="officers.html" accesskey="3" title="">Officers</a></li>
+				<li><a href="events.html" accesskey="3" title="">Events</a></li>
+				<li><a href="programs.html">Programs & Fun</a></li>
+				<li><a href="https://www.facebook.com/vtechvsa/photos_stream?tab=photos_albums" accesskey="5" title="">Pictures</a></li>
+				<li><a href="philanthropy.html"> Philanthropy </a></li>
+				<li><a href="https://squareup.com/market/vtvsa" accesskey="6" title="">Store</a></li>
+	</ul>
+</div>
+
+<!--
+<center>
+<br>
+<iframe width="1200" height="430" src="http://www.cincopa.com/media-platform/iframe.aspx?fid=AMKAtpr7Qik9" frameborder="0" allowfullscreen scrolling="no"></iframe>
+<br><br>
+</center>
+-->
+
+
+
+
+
+	<center><!-- FOR BANNER -->
+
+
+		<!-- it works the same with all jquery version from 1.x to 2.x -->
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<!-- use jssor.slider.mini.js (40KB) instead for release -->
+		<!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+		<script type="text/javascript" src="js/jssor.js"></script>
+		<script type="text/javascript" src="js/jssor.slider.js"></script>
+		<script>
+
+			jQuery(document).ready(function ($) {
+				//Reference http://www.jssor.com/development/slider-with-caption-jquery.html
+				//Reference http://www.jssor.com/development/reference-ui-definition.html#captiondefinition
+				//Reference http://www.jssor.com/development/tool-caption-transition-viewer.html
+
+				var _CaptionTransitions = [
+				//CLIP|LR
+				{$Duration: 900, $Clip: 3, $Easing: $JssorEasing$.$EaseInOutCubic },
+				//CLIP|TB
+				{$Duration: 900, $Clip: 12, $Easing: $JssorEasing$.$EaseInOutCubic },
+
+				//ZMF|10
+				{$Duration: 600, $Zoom: 11, $Easing: { $Zoom: $JssorEasing$.$EaseInExpo, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 },
+
+				//ZML|R
+				{$Duration: 600, x: -0.6, $Zoom: 11, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic }, $Opacity: 2 },
+				//ZML|B
+				{$Duration: 600, y: -0.6, $Zoom: 11, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic }, $Opacity: 2 },
+
+				//ZMS|B
+				{$Duration: 700, y: -0.6, $Zoom: 1, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic }, $Opacity: 2 },
+
+				//RTT|10
+				{$Duration: 700, $Zoom: 11, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseInExpo, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInExpo }, $Opacity: 2, $Round: { $Rotate: 0.8} },
+
+				//RTTL|R
+				{$Duration: 700, x: -0.6, $Zoom: 11, $Rotate: 1, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInCubic }, $Opacity: 2, $Round: { $Rotate: 0.8} },
+				//RTTL|B
+				{$Duration: 700, y: -0.6, $Zoom: 11, $Rotate: 1, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInCubic }, $Opacity: 2, $Round: { $Rotate: 0.8} },
+
+				//RTTS|R
+				{$Duration: 700, x: -0.6, $Zoom: 1, $Rotate: 1, $Easing: { $Left: $JssorEasing$.$EaseInQuad, $Zoom: $JssorEasing$.$EaseInQuad, $Rotate: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseOutQuad }, $Opacity: 2, $Round: { $Rotate: 1.2} },
+				//RTTS|B
+				{$Duration: 700, y: -0.6, $Zoom: 1, $Rotate: 1, $Easing: { $Top: $JssorEasing$.$EaseInQuad, $Zoom: $JssorEasing$.$EaseInQuad, $Rotate: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseOutQuad }, $Opacity: 2, $Round: { $Rotate: 1.2} },
+
+				//R|IB
+				{$Duration: 900, x: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutBack }, $Opacity: 2 },
+				//B|IB
+				{$Duration: 900, y: -0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutBack }, $Opacity: 2 },
+
+				];
+
+				var options = {
+					$AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+					$AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+					$AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+					$PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+					$ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+					$SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+					$MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+					//$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+					//$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+					$SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+					$DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+					$ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+					$UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+					$PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+					$DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+					$CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
+						$Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
+						$CaptionTransitions: _CaptionTransitions,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
+						$PlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
+						$PlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
+					},
+
+					$BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
+						$Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
+						$ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+						$AutoCenter: 0,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+						$Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+						$Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+						$SpacingX: 10,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+						$SpacingY: 10,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+						$Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+					},
+
+					$ArrowNavigatorOptions: {
+						$Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+						$ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+						$AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+						$Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+					}
+				};
+				var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+				//responsive code begin
+				//you can remove responsive code if you don't want the slider scales while window resizes
+				function ScaleSlider() {
+					var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+					if (parentWidth)
+						jssor_slider1.$ScaleWidth(Math.min(parentWidth, 1200));
+					else
+						window.setTimeout(ScaleSlider, 30);
+				}
+				ScaleSlider();
+
+				$(window).bind("load", ScaleSlider);
+				$(window).bind("resize", ScaleSlider);
+				$(window).bind("orientationchange", ScaleSlider);
+				//responsive code end
+			});
+		</script>
+		<!-- Jssor Slider Begin -->
+		<!-- To move inline styles to css file/block, please specify a class name for each element. --> 
+		<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 1200px; height: 430px; overflow: hidden; ">
+
+			<!-- Loading Screen -->
+			<div u="loading" style="position: absolute; top: 0px; left: 0px;">
+				<div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+					background-color: #000000; top: 0px; left: 0px;width: 100%;height:100%;">
+				</div>
+				<div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
+					top: 0px; left: 0px;width: 100%;height:100%;">
+				</div>
+			</div>
+
+			<!-- Slides Container -->
+			<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1200px; height: 430px; overflow: hidden;">
+				<div>
+					<img u="image" src="./aboutUs.jpg" />
+					
+				</div>
+				<div>
+					<img u="image" src="./images/slideshow/current/2.JPG" />
+					
+				</div>
+				<div>
+					<img u="image" src="./images/slideshow/current/3.JPG" />
+					
+				</div>
+				<div>
+					<img u="image" src="./images/slideshow/current/4.JPG" />
+					
+				</div>
+				<div>
+					<img u="image" src="./images/slideshow/current/5.JPG" />
+					
+				</div>
+				<div>
+					<img u="image" src="./images/slideshow/current/6.JPG" />
+					
+				</div>
+				<!--
+				<div>
+					<img u="image" src="../images/slideshow/current/7.jpg" />
+					
+				</div>
+				<div>
+					<img u="image" src="../images/slideshow/current/8.jpg" />
+					
+				</div>
+				<div>
+					<img u="image" src="../img/photography/010.jpg" />
+				   
+				</div>
+				<div>
+					<img u="image" src="../img/photography/011.jpg" />
+					
+				</div>
+				-->
+			</div>
+			
+			<!-- region Bullet Navigator Skin Begin -->
+			<!-- Help: http://www.jssor.com/development/slider-with-bullet-navigator-jquery.html -->
+			<style>
+				/* jssor slider bullet navigator skin 01 css */
+				/*
+				.jssorb01 div           (normal)
+				.jssorb01 div:hover     (normal mouseover)
+				.jssorb01 .av           (active)
+				.jssorb01 .av:hover     (active mouseover)
+				.jssorb01 .dn           (mousedown)
+				*/
+				.jssorb01 {
+					position: absolute;
+				}
+				.jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
+					position: absolute;
+					/* size of bullet elment */
+					width: 12px;
+					height: 12px;
+					filter: alpha(opacity=70);
+					opacity: .7;
+					overflow: hidden;
+					cursor: pointer;
+					border: #000 1px solid;
+				}
+				.jssorb01 div { background-color: gray; }
+				.jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
+				.jssorb01 .av { background-color: #fff; }
+				.jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+			</style>
+			<!-- bullet navigator container -->
+			<div u="navigator" class="jssorb01" style="bottom: 16px; right: 10px;">
+				<!-- bullet navigator item prototype -->
+				<div u="prototype"></div>
+			</div>
+			<!--endregion Bullet Navigator Skin End -->
+			
+			<!--region Arrow Navigator Skin Begin -->
+			<!-- Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html -->
+			<style>
+				/* jssor slider arrow navigator skin 02 css */
+				/*
+				.jssora02l                  (normal)
+				.jssora02r                  (normal)
+				.jssora02l:hover            (normal mouseover)
+				.jssora02r:hover            (normal mouseover)
+				.jssora02l.jssora02ldn      (mousedown)
+				.jssora02r.jssora02rdn      (mousedown)
+				*/
+				.jssora02l, .jssora02r {
+					display: block;
+					position: absolute;
+					/* size of arrow element */
+					width: 55px;
+					height: 55px;
+					cursor: pointer;
+					background: url(../img/a02.png) no-repeat;
+					overflow: hidden;
+				}
+				.jssora02l { background-position: -3px -33px; }
+				.jssora02r { background-position: -63px -33px; }
+				.jssora02l:hover { background-position: -123px -33px; }
+				.jssora02r:hover { background-position: -183px -33px; }
+				.jssora02l.jssora02ldn { background-position: -3px -33px; }
+				.jssora02r.jssora02rdn { background-position: -63px -33px; }
+			</style>
+			<!-- Arrow Left -->
+			<span u="arrowleft" class="jssora02l" style="top: 123px; left: 8px;">
+			</span>
+			<!-- Arrow Right -->
+			<span u="arrowright" class="jssora02r" style="top: 123px; right: 8px;">
+			</span>
+			<!--endregion Arrow Navigator Skin End -->
+			<a style="display: none" href="http://www.jssor.com">slider in html</a>
+		</div>
+		<!-- Jssor Slider End -->
+		</center>
+
+
+
+<div id="three-column" class="container">
+	<div id="tbox1">
+			<h2> ABOUT US </h2>
+			<p>
+			VTVSA stands for the Vietnamese Student Association at Virginia Tech. 
+			It is a social and cultural organization whose goals are to educate others about Vietnamese culture in addition 
+			to creating strong bonds between members and other organizations. 
+
+			</p><a href="aboutUs.html" class="button">Learn More</a> </div>
+	<div id="tbox2">
+			<h2> CULTURE SHOW </h2>
+			<p>The Vietnamese Student Association's Culture Show is one of the biggest events that happen every year by VSA.
+			With acts such as beautiful traditional dances, jaw dropping modern dances, a stunning fashion show, an engaging script, and MUCH MORE, 
+			the show brings together a night full of Vietnamese culture, comedy, and friends. 
+			Come and sign up early to perform in the acts, or simply just watch your friends! </br>
+			<strong>MARK YOUR CALENDARS FOR THIS SEASON'S CULTURE SHOW: April 18th, 2015</strong>
+			</p><a href="cultureShow.html" class="button">Learn More</a> </div>
+	<div id="tbox3">
+			<h2> EVENTS </h2>
+			<p> Throughout the year, VSA engages in fun events 2 to 3 times a month to promote Vietnamese Culture and
+			to bond members together. Some of these events include Pho Night (Free Unlimited Pho for members), 
+			Field Day (compete against other classes and houses), Open Mic Night (Open to members to perform), 
+			Big/Little Program (get a Big brother, Big sister to show you the ropes), and MUCH MORE! </p>
+			<a href="events.html" class="button">Learn More</a> </div>
+</div>
+<div id="page" class="container">
+	<div id="content">
+		<div class="title">
+			<h2>Announcements <span class="byline">and Upcoming Events</span></h2>
+		</div>
+		</br>
+		
+		<!--
+		<a class="embedly-card" href="https://www.youtube.com/watch?v=S29SyIQ9mVo">Timeless</a>
+<script>!function(a){var b="embedly-platform",c="script";if(!a.getElementById(b)){var d=a.createElement(c);d.id=b,d.src=("https:"===document.location.protocol?"https":"http")+"://cdn.embedly.com/widgets/platform.js";var e=document.getElementsByTagName(c)[0];e.parentNode.insertBefore(d,e)}}(document);</script>
+		-->
+		
+		<iframe width="800" height="500" src="https://www.youtube.com/embed/S29SyIQ9mVo?rel=0" frameborder="0" allowfullscreen></iframe>
+		
+		
+		</br></br>
+		<h3> <u>HELLO TO OUR NEW MEMBERS</u></h3><br>
+		<p> "Be brave. Take risks. Nothing can substitute experience." <br>
+		- Paulo Coelho<br>
+		
+		With that said, join VSA today and experience friendship, culture, photobombing, extraordinary events, and unforgettable memories. <br>
+		
+		<i>"Timeless" Video credit: Andrew Nguyen (Secretary)</i>
+		</p><br><br>
+		
+		<a href="#" class="image image-full"><img src="images/newOfficers.jpg" alt="" /></a>
+		<h3> <u>MEET OUR OFFICERS</u></h3><br>
+		<p>"If everyone is moving forward together, then success takes care of itself."<br> 
+		- Henry Ford<br>
+		
+		<i>[from left to right] Jessica Trieu, Carolyn Tran, Andrew Nguyen, Estelle Susanto, 
+		Kevin Dang, Navdeep Singh, Allison Le, Paige Emanivong, Kavin Aravind, Jessica Shyy, 
+		Viet Nguyen, Claudia Pham, Nick Phandinh, Anh Tu Mai, Jonathan Thai, Quang Pham, Edward Park
+		</i></p>
+		
+		
+	</div>
+	<div id="sidebar">
+		<h2 class="title"><a href="events.html"><u>Upcoming Events</u></a></h2>
+		<ul class="style2">
+			<li class="first">
+				<h3><a href="https://www.facebook.com/events/1462516500639934/">MAUVSA 7TH ANNUAL GALA</a></h3>
+				<p>
+				Please join the Mid-Atlantic Union of Vietnamese Student Associations (MAUVSA) as we host our 7th annual Advance Conference! 
+				<br>
+				<b>Date:</b> 6pm, June 19, 2015<br>
+				<b>Where: </b> 6793 WILSON BLVD STORE 5 FALLS CHURCH, VA 22044 <br>
+				<b>Link: </b><a href="https://www.facebook.com/events/1427409647564003/"> <i>Facebook Event</i> </a><br>
+				<b>More Info: </b><a href="https://mauvsa.herokuapp.com/"> <i>MAUVSA Website</i> </a>
+				
+				</p>
+			</li>
+			<li>
+				<h3><a href="events.html">VSA FREE SUMMER Car Washes</a></h3>
+				<p> Look out for our Summer Fundraising Car Washes! Help us wash cars, dontate, or just simply bring your car and your friends for a FREE CAR WASH!<br>
+				<b>Date:</b> Multiple <br>
+				<b>Where: </b> Northern Virginia <br>
+				<b>Link: </b><a href=""> <i>Facebook Event</i> </a>
+				
+				</p>
+			</li>
+			<li>
+				<h3><a href="events.html">MAUVSA Leadership Camp</a></h3>
+				<p> Get ready for a weekend of games, workshops, and amazing people. Meet VSA leaders from the area and network with them in a laid back environment! <br>
+				<b>Date:</b> July 17-19, 2015 <br>
+				<b>Where: </b>  Summit Lake Camp in Emmitsburg, MD <br>
+				<b>Link: </b><a href="https://www.facebook.com/events/889155577817623/"> <i>Facebook Event </i></a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div id="footer" class="container">
+	<center>
+		<h2 class="title">Connect With Us</h2>
+		<ul class="actions">
+			<li><a href="https://facebook.com/vtechvsa" class="button">Facebook</a></li>
+			<li><a href="https://twitter.com/vsahokies" class="button">Twitter</a></li>
+			<li><a href="https://youtube.com/vtvsa" class="button">Youtube</a></li>
+			<li><a href="https://gobblerconnect.vt.edu/organization/VSA" class="button">Gobbler Connect</a></li>
+		</ul>
+	</center>
+</div>
+
+
+</body><script type="text/javascript" src="https://mylivechat.com/chatinline.aspx?hccid=46687496"></script>
+
+
+</html>
